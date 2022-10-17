@@ -20,10 +20,10 @@ public class DAO {
 	private String url = "jdbc:mysql://mysql:3306/dbprodutos?useTimezone=true&serverTimezone=UTC";
 	
 	/** The user. */
-	private String user = "root";
+	private String user = "dba";
 	
 	/** The password. */
-	private String password = "mysqlpassw0rd";
+	private String password = "MyDBAP@ssw0rd";
 	
 	/**
 	 * Conectar.

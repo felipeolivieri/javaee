@@ -120,7 +120,7 @@ public class Controller extends HttpServlet {
 		// setar as variáveis JavaBeans
 		produto.setProduto(request.getParameter("produto"));
 		produto.setDescricao(request.getParameter("descricao"));
-		produto.setValor(request.getParameter("valor"));
+		produto.setValor(request.getParameter("valor").replaceAll(",","."));
 		produto.setQuantidade(request.getParameter("quantidade"));
 		// invocar o método inserirProduto passando o objeto produto
 		dao.inserirProduto(produto);
